@@ -27,13 +27,13 @@ public class Enemigo {
     public String getnombre() {
         return nombre;
     }
-    public String getvida() {
+    public int getvida() {
         return vida;
     }
-    public String getvelocidad() {
+    public double getvelocidad() {
         return velocidad;
     }
-    public String aereo() {
+    public boolean aereo() {
         return aereo;
     }
     @Override
