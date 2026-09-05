@@ -1,11 +1,14 @@
 public class CercanoE extends Enemigo{
-    boolean arma;
-    int cantidad;
-    String zonaM;
-    double armaduraP;
+    boolean arma = false;
+    int cantidad = 0;
+    String zonaM = "Desconocida";
+    double armaduraP = 0.0;
 
+    public CercanoE(){
+        super("Desconocido", 0, 0, false);
+    }
     public CercanoE(String zonaM, int cantidad, double armaduraP, boolean arma) {
-        super("bandidos", 100, 15.3, false);
+        super("Bandidos", 100, 75, false);
         this.zonaM = zonaM;
         this.cantidad = cantidad;
         this.armaduraP = armaduraP;
@@ -27,9 +30,8 @@ public class CercanoE extends Enemigo{
         this.cantidad = 5;
     }
     public String toString(){
-    return "CercanoE (zona de movimiento: " + zonaM + ", cantidad: " + cantidad
-    + ", armadura promedio: " + armaduraP + ", tiene arma?: " + arma + ", nombre: " + getnombre() + ", vida: " + getvida()
-    + ", velocidad: " + getvelocidad() + ", es aereo?: " + getaereo() + ")";
+    return "CercanoE (nombre: " + getnombre() + ", vida: " + getvida() + ", velocidad: " + getvelocidad() + ", es aereo: " + getaereo() + "zona de movimiento: " + zonaM + ", cantidad: " + cantidad
+    + ", armadura promedio: " + armaduraP + ", tiene arma?: " + arma + ")";
     }
     
 }

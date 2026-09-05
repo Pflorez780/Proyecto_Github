@@ -1,9 +1,12 @@
 public class PesadoE extends Enemigo {
-    String tamano;
-    boolean arma;
-    int escudoV;
-    double fuerza;
+    String tamano = "Desconocido";
+    boolean arma = false;
+    int escudoV = 0;
+    double fuerza = 0.0;
 
+    public PesadoE(){
+        super("Desconocido", 0, 0, false);
+    }
     public PesadoE(String tamano, boolean arma, int escudoV, double fuerza) {
         super("Pesado Comun", 200, 3.0, false);
         this.tamano = tamano;
@@ -26,6 +29,6 @@ public class PesadoE extends Enemigo {
         arma = true;
     }
     public String toString(){
-    return "PesadoE (tamaño: " + tamano + ", tiene arma: " + arma + ", escudo vida: " + escudoV + ", fuerza: " + fuerza + ", nombre: " + getnombre() + ", vida: " + getvida() + ", velocidad: " + getvelocidad() + ", es aereo: " + getaereo() + ")";
+    return "PesadoE (nombre: " + getnombre() + ", vida: " + getvida() + ", velocidad: " + getvelocidad() + ", es aereo: " + getaereo() + ", tamaño: " + tamano + ", tiene arma: " + arma + ", escudo vida: " + escudoV + ", fuerza: " + fuerza + ")";
     }
 }

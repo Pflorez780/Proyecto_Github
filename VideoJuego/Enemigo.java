@@ -3,7 +3,6 @@ public class Enemigo {
     private int vida;
     private double velocidad;
     private boolean aereo;
-
     public Enemigo(String nombre, int vida, double velocidad, boolean aereo) {
         this.nombre = nombre;
         this.vida = vida;

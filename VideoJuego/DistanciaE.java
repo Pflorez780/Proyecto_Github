@@ -1,9 +1,11 @@
 public class DistanciaE extends Enemigo {
-    String tipoA;
-    boolean ataqueC;
-    int municion;
-    double alcanceM;
-
+    String tipoA = "Desconocido";
+    boolean ataqueC = false;
+    int municion = 0;
+    double alcanceM = 0.0;
+    public DistanciaE(){
+        super("Desconocido", 0, 0, false);
+    }
     public DistanciaE(String tipoA, boolean ataqueC, int municion, double alcanceM) {
         super("Arquero", 100, 10.5, false);
         this.tipoA = tipoA;
@@ -24,12 +26,11 @@ public class DistanciaE extends Enemigo {
         this.tipoA = tipoA;
         this.ataqueC = ataqueC;
         this.alcanceM = alcanceM;
-
+        municion = 5000;
     }
 
     public String toString(){
-    return "DistanciaE (tipo de ataque: " + tipoA + ", ataque cuerpo a cuerpo?: " + ataqueC
-    + ", cantidad de municion: " + municion + ", alcance del ataque: " + alcanceM + ", nombre: " + getnombre() + ", vida: " + getvida()
-    + ", velocidad: " + getvelocidad() + ", es aereo?: " + aereo() + ")";
+    return "DistanciaE (nombre: " + getnombre() + ", vida: " + getvida() + ", velocidad: " + getvelocidad() + ", es aereo: " + getaereo() + ", tipo de ataque: " + tipoA + ", ¿ataque cuerpo a cuerpo?: " + ataqueC
+    + ", cantidad de municion: " + municion + ", alcance del ataque: " + alcanceM + ")";
     }
 }
