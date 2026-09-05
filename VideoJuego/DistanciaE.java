@@ -5,10 +5,26 @@ public class DistanciaE extends Enemigo {
     double alcanceM;
 
     public DistanciaE(String tipoA, boolean ataqueC, int municion, double alcanceM) {
-        super("Enemigo", 100);
+        super("Arquero", 100, 10.5, false);
         this.tipoA = tipoA;
         this.ataqueC = ataqueC;
         this.municion = municion;
         this.alcanceM = alcanceM;
+    }
+    public DistanciaE(String tipoA, int municion, double alcanceM) {
+        super("Militar", 115, 12.0, false);
+        this.tipoA = tipoA;
+        ataqueC = true;
+        this.municion = municion;
+        this.alcanceM = alcanceM;
+
+    }
+    public DistanciaE(String tipoA, boolean ataqueC , double alcanceM) {
+        super("Mago", 100, 8.5, true);
+        this.tipoA = tipoA;
+        this.ataqueC = ataqueC;
+        this.alcanceM = alcanceM;
+
+
     }
 }
