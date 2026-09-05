@@ -33,7 +33,23 @@ public class Enemigo {
     public double getvelocidad() {
         return velocidad;
     }
-    public boolean aereo() {
+    public boolean getaereo() {
+        return aereo;
+    }
+    public String Setnombre(String nombre) {
+        this.nombre = nombre;
+        return nombre;
+    }
+    public int Setvida(int vida) {
+        this.vida = vida;
+        return vida;
+    }
+    public double Setvelocidad(double velocidad) {
+        this.velocidad = velocidad;
+        return velocidad;
+    }
+    public boolean Setaereo(boolean aereo) {
+        this.aereo = aereo;
         return aereo;
     }
     @Override

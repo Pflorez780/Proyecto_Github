@@ -26,6 +26,10 @@ public class CercanoE extends Enemigo{
         this.zonaM= "bosque";
         this.cantidad = 5;
     }
-
+    public String toString(){
+    return "CercanoE (zona de movimiento: " + zonaM + ", cantidad: " + cantidad
+    + ", armadura promedio: " + armaduraP + ", tiene arma?: " + arma + ", nombre: " + getnombre() + ", vida: " + getvida()
+    + ", velocidad: " + getvelocidad() + ", es aereo?: " + getaereo() + ")";
+    }
     
 }
