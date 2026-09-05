@@ -25,6 +25,11 @@ public class DistanciaE extends Enemigo {
         this.ataqueC = ataqueC;
         this.alcanceM = alcanceM;
 
+    }
 
+    public String toString(){
+    return "DistanciaE (tipo de ataque: " + tipoA + ", ataque cuerpo a cuerpo?: " + ataqueC
+    + ", cantidad de municion: " + municion + ", alcance del ataque: " + alcanceM + ", nombre: " + getnombre() + ", vida: " + getvida()
+    + ", velocidad: " + getvelocidad() + ", es aereo?: " + aereo() + ")";
     }
 }

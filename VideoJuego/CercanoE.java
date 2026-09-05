@@ -5,7 +5,7 @@ public class CercanoE extends Enemigo{
     double armaduraP;
 
     public CercanoE(String zonaM, int cantidad, double armaduraP, boolean arma) {
-        super(zonaM, cantidad, armaduraP, arma);
+        super("bandidos", 100, 15.3, false);
         this.zonaM = zonaM;
         this.cantidad = cantidad;
         this.armaduraP = armaduraP;
@@ -13,14 +13,14 @@ public class CercanoE extends Enemigo{
     }
 
     public CercanoE(String zonaM, int cantidad) {
-        super(zonaM, cantidad);
+        super("Insecto", 25, 20.0, true);
         this.zonaM = zonaM;
         this.cantidad = cantidad;
         this.armaduraP = 50.5;
         this.arma = true;
     }
-    public CernacoE(double armaduraP, boolean arma) {
-        super(armaduraP, arma);
+    public CercanoE(double armaduraP, boolean arma) {
+        super("Aves", 50, 30.0, true);
         this.armaduraP = armaduraP;
         this.arma = arma;
         this.zonaM= "bosque";
